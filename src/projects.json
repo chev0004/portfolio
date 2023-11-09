@@ -1,0 +1,30 @@
+[
+    {
+        "name": "discord AI chatbots",
+        "description": "using NovelAI's API, I created AI chatbots for Discord. they're not perfect, but I sure learned a lot of new things while making them",
+        "link": "",
+        "github": "https://github.com/chev0004/Xynthetic",
+        "image": "./images/zynthia2.png"
+    },
+    {
+        "name": "zodiac calculator",
+        "description": "a simple zodiac calculator, using plain HTML, CSS, and JavaScript. I made it since my friends had it as a school project, even though I wasn't classmates with them and no one probably knows it exists",
+        "link": "https://zhodiac.netlify.app/",
+        "github": "https://github.com/chev0004/zodiac-project",
+        "image": "./images/zhodiac.png"
+    },
+    {
+        "name": "first website",
+        "description": "I built this website without any prior knowledge to HTML or CSS, just JavaScript. I brute forced my way with ChatGPT. it's kind of terrible, but it's my first anyway",
+        "link": "https://the-chevvy-archives.netlify.app/",
+        "github": "",
+        "image": "./images/archives.png"
+    },
+    {
+        "name": "second website",
+        "description": "after learning a bit of HTML and CSS properly, I went ahead and tried making a new and improved version of my old one, all with responsive design. I never finished it though, since found out about React and Expressjs",
+        "link": "https://xhev.netlify.app/en/",
+        "github": "",
+        "image": "./images/xhev.png"
+    }
+]
