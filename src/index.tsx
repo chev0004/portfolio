@@ -3,11 +3,13 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
-const root = ReactDOM.createRoot(
+const summertime = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
-root.render(
-    <React.StrictMode>
-        <App />
-    </React.StrictMode>
+
+//my favourite anime
+summertime.render(
+    // <React.StrictMode>
+    <App />
+    // </React.StrictMode>
 );

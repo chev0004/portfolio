@@ -8,9 +8,9 @@ export default function App() {
     return (
         <Router>
             <div className='App'>
+                <Navbar />
                 <Routes>
-                    <Route path='/' element={<Navbar />} />
-                    <Route path='/basement' element={<Home />} />
+                    <Route path='/' element={<Home />} />
                     <Route path='/victim/:id' element={<Victims />} />
                     <Route path='*' element={<Illegal />} />
                 </Routes>
