@@ -14,17 +14,17 @@
         "image": "./images/zhodiac.png"
     },
     {
-        "name": "first website",
-        "description": "I built this website without any prior knowledge to HTML or CSS, just JavaScript. I brute forced my way with ChatGPT. it's kind of terrible, but it's my first anyway",
-        "link": "https://the-chevvy-archives.netlify.app/",
-        "github": "",
-        "image": "./images/archives.png"
-    },
-    {
         "name": "second website",
         "description": "after learning a bit of HTML and CSS properly, I went ahead and tried making a new and improved version of my old one, all with responsive design. I never finished it though, since found out about React and Expressjs",
         "link": "https://xhev.netlify.app/en/",
         "github": "",
         "image": "./images/xhev.png"
+    },
+    {
+        "name": "first website",
+        "description": "I built this website without any prior knowledge to HTML or CSS, just JavaScript. I brute forced my way with ChatGPT. it's kind of terrible, but it's my first anyway",
+        "link": "https://the-chevvy-archives.netlify.app/",
+        "github": "",
+        "image": "./images/archives.png"
     }
 ]

@@ -32,34 +32,50 @@ export const Home = () => {
                 {projects.map((project) => {
                     return (
                         <div className='project-jail' key={project.name}>
-                            <Link
-                                to={project.image}
-                                target='_blank'
-                                rel='noopener noreferrer'
-                            >
-                                <img
-                                    className='thumbnail'
-                                    src={project.image}
-                                    alt={project.name}
-                                />
-                            </Link>
-
-                            {project.link ? (
+                            <div className='project-jail-innerjail'>
                                 <Link
-                                    to={project.link}
+                                    to={project.image}
                                     target='_blank'
                                     rel='noopener noreferrer'
-                                    className='project-jail-title'
                                 >
-                                    {project.name}
+                                    <img
+                                        className='thumbnail'
+                                        src={project.image}
+                                        alt={project.name}
+                                    />
                                 </Link>
-                            ) : (
-                                <span className='project-jail-title'>
-                                    {project.name}
-                                </span>
-                            )}
 
-                            <p>{project.description}</p>
+                                {project.link ? (
+                                    <Link
+                                        to={project.link}
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                        className='project-jail-title'
+                                    >
+                                        {project.name}
+                                    </Link>
+                                ) : (
+                                    <span className='project-jail-title'>
+                                        {project.name}
+                                    </span>
+                                )}
+
+                                <p>{project.description}</p>
+
+                                {project.github && (
+                                    <Link
+                                        to={project.github}
+                                        target='_blank'
+                                        rel='noopener noreferrer'
+                                    >
+                                        <img
+                                            className='gitty'
+                                            src={'./images/github.svg'}
+                                            alt={project.name}
+                                        />
+                                    </Link>
+                                )}
+                            </div>
                         </div>
                     );
                 })}

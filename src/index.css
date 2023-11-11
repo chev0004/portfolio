@@ -88,8 +88,8 @@
 
 .about-me {
     /* background-color: #c1d5e9; */
-    left: 50%;
     gap: 8px;
+    left: 50%;
     display: flex;
     width: fit-content;
     position: relative;
@@ -134,7 +134,7 @@
 }
 
 .project-jail {
-    background-color: #262a2f;
+    background: linear-gradient(to left, #262a2f, #4a4b4d);
     width: 320px;
     height: 400px;
     border-radius: 14px;
@@ -147,7 +147,14 @@
     box-shadow: #74787c 0 0 24px 2px;
 }
 
+.project-jail-innerjail {
+    /* background-color: #7b2a2a; */
+    position: relative;
+    height: 100%;
+}
+
 .project-jail-title {
+    /* background-color: #4a4b4d; */
     top: 8px;
     font-size: 1.4rem;
     font-weight: bold;
@@ -158,6 +165,7 @@
 }
 
 .project-jail p {
+    /* background-color: #4a4b4d; */
     margin-top: 24px;
     margin-left: 16px;
     margin-right: 16px;
@@ -167,6 +175,43 @@
 .thumbnail {
     width: 100%;
     height: 160px;
+    object-fit: cover;
     border-top-left-radius: 14px;
     border-top-right-radius: 14px;
+}
+
+.gitty {
+    right: -2px;
+    bottom: 0px;
+    position: absolute;
+    filter: invert(100%);
+    transform: scale(0.8);
+}
+
+@media screen and (max-width: 1200px) {
+    .chev-container {
+        width: 1000px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .projects {
+        width: 800px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .chev-container {
+        width: fit-content;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .projects {
+        width: 600px;
+        left: 50%;
+        transform: translateX(-50%);
+        position: relative;
+    }
 }
