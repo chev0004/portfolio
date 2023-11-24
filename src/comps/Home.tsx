@@ -13,17 +13,26 @@ export const Home = () => {
         <div className='basement'>
             <div className='chev-container'>
                 <div className='nested-chev-container-idk'>
-                    <h2>
-                        Hey, I'm <span style={{ color: '#c1d5e9' }}>chev</span>
-                    </h2>
-                    <p>A hobbyist programmer who codes for fun</p>
+                    <div>
+                        <h2>
+                            Hey, I'm{' '}
+                            <span style={{ color: '#c1d5e9' }}>chev</span>
+                        </h2>
+                    </div>
+                    <div>
+                        <p>A hobbyist programmer who codes for fun</p>
+                    </div>
                 </div>
             </div>
             <div className='about-me'>
-                <h2 className='intro-title'>About me</h2>
-                <p className='intro-description'>
-                    my balls are very, very {'itchy'}
-                </p>
+                <div>
+                    <h2 className='intro-title'>About me</h2>
+                </div>
+                <div>
+                    <p className='intro-description'>
+                        my balls are very, very {'itchy'}
+                    </p>
+                </div>
             </div>
             <div className='projects'>
                 <div className='project-title'>

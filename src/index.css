@@ -14,6 +14,7 @@
     padding: 20px;
     display: flex;
     max-width: 100%;
+    user-select: none;
     position: absolute;
     align-items: center;
     justify-content: center;
@@ -46,17 +47,19 @@
     gap: 400px;
     width: 1200px;
     display: flex;
+    user-select: none;
     position: absolute;
+    overflow-x: hidden;
+    padding-bottom: 40px;
     flex-direction: column;
     transform: translateX(-50%);
 }
 
 .chev-container {
     /* background-color: #c1d5e9; */
-    top: 0;
-    left: 0;
     width: 100%;
     display: flex;
+    user-select: none;
     position: relative;
     flex-direction: column;
     justify-content: center;
@@ -64,12 +67,19 @@
 
 .nested-chev-container-idk {
     /* background-color: #356391; */
-    left: 0;
     display: flex;
+    user-select: text;
     width: fit-content;
     position: relative;
     align-items: center;
     flex-direction: column;
+}
+
+.nested-chev-container-idk div {
+    /* background-color: #c1d5e9; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .chev-container h2 {
@@ -77,26 +87,34 @@
     font-size: 86px;
     margin-top: 40px;
     margin-bottom: 0;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .chev-container p {
     color: #74787c;
     margin-top: 0px;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .about-me {
     /* background-color: #c1d5e9; */
     gap: 8px;
     left: 50%;
+    width: 100%;
     display: flex;
-    width: fit-content;
+    user-select: text;
     position: relative;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     transform: translateX(-50%);
+}
+
+.about-me div {
+    /* background-color: #c1d5e9; */
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .about-me h2 {
@@ -116,6 +134,7 @@
     gap: 40px;
     display: flex;
     flex-wrap: wrap;
+    user-select: text;
     justify-content: center;
 }
 
@@ -190,28 +209,43 @@
 
 @media screen and (max-width: 1200px) {
     .chev-container {
-        width: 1000px;
         left: 50%;
+        width: 1000px;
         transform: translateX(-50%);
     }
     .projects {
-        width: 800px;
         left: 50%;
-        transform: translateX(-50%);
+        width: 800px;
         position: relative;
+        transform: translateX(-50%);
     }
 }
 
 @media screen and (max-width: 960px) {
+    .basement {
+        width: 480px;
+    }
+
     .chev-container {
-        width: fit-content;
         left: 50%;
+        width: fit-content;
         transform: translateX(-50%);
     }
+
+    .chev-container h2 {
+        margin: 0;
+        font-size: 64px;
+    }
+
+    .chev-container p {
+        margin: 0;
+        font-size: 16px;
+    }
+
     .projects {
-        width: 600px;
         left: 50%;
-        transform: translateX(-50%);
+        width: 600px;
         position: relative;
+        transform: translateX(-50%);
     }
 }
