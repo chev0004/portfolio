@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import projects from '../projects.json';
 
@@ -8,6 +8,16 @@ export const Home = () => {
             console.log(project.name);
         });
     }, []);
+
+    const [isCopied, setIsCopied] = useState(false);
+
+    const copyToClipboard = async () => {
+        await navigator.clipboard.writeText('xhev');
+        setIsCopied(true);
+        setTimeout(() => {
+            setIsCopied(false);
+        }, 2000);
+    };
 
     return (
         <div className='basement'>
@@ -30,7 +40,14 @@ export const Home = () => {
                 </div>
                 <div>
                     <p className='intro-description'>
-                        my balls are very, very {'itchy'}
+                        Hey, I'm chev, and I am a hobbyist programmer who codes
+                        for fun, mostly making things that I find interesting,
+                        or things that I feel are a little convenient to have
+                        <br />
+                        <br />
+                        Most of my experience revolves around making Discord
+                        bots, since that's what got me into programming, but
+                        I've recently started dabbling into website-making.
                     </p>
                 </div>
             </div>
@@ -88,6 +105,23 @@ export const Home = () => {
                         </div>
                     );
                 })}
+            </div>
+            <div className='about-me'>
+                <div>
+                    <h2 className='intro-title'>Contact</h2>
+                </div>
+                <div style={{ height: '200px' }}>
+                    <p className='intro-description'>
+                        For now, you can add me in Discord with my username
+                        <span
+                            style={{ color: '#c1d5e9', cursor: 'pointer' }}
+                            onClick={copyToClipboard}
+                        >
+                            {isCopied ? ' copied! ' : ' xhev, '}
+                        </span>
+                        and if you do, please tell me you came from here!
+                    </p>
+                </div>
             </div>
         </div>
     );
