@@ -10,14 +10,14 @@ export const Home = () => {
 	// 	});
 	// }, []);
 
-	const [isCopied, setIsCopied] = useState(false);
+	// const [isCopied, setIsCopied] = useState(false);
 
 	const copyToClipboard = async () => {
 		await navigator.clipboard.writeText('xhev');
-		setIsCopied(true);
-		setTimeout(() => {
-			setIsCopied(false);
-		}, 2000);
+		// setIsCopied(true);
+		// setTimeout(() => {
+		// 	setIsCopied(false);
+		// }, 2000);
 	};
 
 	return (
