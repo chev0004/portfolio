@@ -1,24 +1,9 @@
-// import { useEffect } from 'react';
-// import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import projects from '../projects.json';
 
 export const Home = () => {
-	// useEffect(() => {
-	// 	projects.forEach((project): void => {
-	// 		console.log(project.name);
-	// 	});
-	// }, []);
-
-	// const [isCopied, setIsCopied] = useState(false);
-
-	const copyToClipboard = async () => {
-		await navigator.clipboard.writeText('chevv0004@gmail.com');
-		// setIsCopied(true);
-		// setTimeout(() => {
-		// 	setIsCopied(false);
-		// }, 2000);
-	};
+	const discord = 'xhev';
+	const email = 'chevv0004@gmail.com';
 
 	return (
 		<div className="basement">
@@ -128,13 +113,11 @@ export const Home = () => {
 						<br />
 						<br />
 						You can contact me via email at
-						<span
-							style={{ color: '#c1d5e9', cursor: 'pointer' }}
-							onClick={copyToClipboard}
-						>
-							{' chevv0004@gmail.com '}
+						<span style={{ color: '#c1d5e9' }}>{` ${email} `}</span>
+						or through my discord account
+						<span style={{ color: '#c1d5e9' }}>
+							{` ${discord}`}
 						</span>
-						or through my social media below.
 					</p>
 				</div>
 			</div>
