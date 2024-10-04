@@ -13,7 +13,7 @@ export const Home = () => {
 	// const [isCopied, setIsCopied] = useState(false);
 
 	const copyToClipboard = async () => {
-		await navigator.clipboard.writeText('xhev');
+		await navigator.clipboard.writeText('chevv0004@gmail.com');
 		// setIsCopied(true);
 		// setTimeout(() => {
 		// 	setIsCopied(false);
