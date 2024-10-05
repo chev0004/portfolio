@@ -1,48 +1,58 @@
+import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import projects from '../projects.json';
+import english from '../locales/english.json';
+import japanese from '../locales/japanese.json';
+import React from 'react';
 
 export const Home = () => {
 	const discord = 'xhev';
 	const email = 'chevv0004@gmail.com';
+
+	const [language, setLanguage] = useState('en');
+	const [translations, setTranslations] = useState(english);
+
+	useEffect(() => {
+		if (language === 'jp') {
+			setTranslations(japanese);
+		} else {
+			setTranslations(english);
+		}
+	}, [language]);
 
 	return (
 		<div className="basement">
 			<div className="chev-container">
 				<div className="nested-chev-container-idk">
 					<div>
-						<h2>
-							Hey, I'm{' '}
-							<span style={{ color: '#c1d5e9' }}>chev</span>
+						<h2
+							style={{
+								fontSize: language === 'jp' ? '54px' : '86px',
+							}}
+						>
+							{translations.greetings}
+							<span style={{ color: '#c1d5e9' }}>
+								{translations.name}
+							</span>
+							{translations.greetings2}
 						</h2>
 					</div>
 					<div>
-						<p>Japanese-speaking Front End Developer</p>
+						<p>{translations.title}</p>
 					</div>
 				</div>
 			</div>
 			<div className="about-me">
 				<div>
-					<h2 className="intro-title">About me</h2>
+					<h2 className="intro-title">{translations.about}</h2>
 				</div>
 				<div>
-					<p className="intro-description">
-						I'm an 18-year-old web developer with over three years
-						of experience building dynamic websites and
-						applications. I focus on making web apps that are for
-						the sake of convenience, things that would just make
-						things a little easier. (I use Arch btw).
-						<br />
-						<br />
-						I also speak Japanese fluently and have worked entirely
-						in Japanese-speaking environments. With over 5600
-						kanji/vocabulary memorized, clear intonation, and a deep
-						understanding of the Japanese culture, I sometimes even
-						fooled native Japanese into thinking I was also one!
-						<br />
-						<br />
-						Aside from development, I enjoy creating digital art
-						when I’m not buried in code.
-					</p>
+					<p
+						className="intro-description"
+						dangerouslySetInnerHTML={{
+							__html: translations.intro.replace(/\n/g, '<br />'),
+						}}
+					></p>
 				</div>
 			</div>
 			<div className="projects">
@@ -51,7 +61,14 @@ export const Home = () => {
 				</div>
 				{projects.map((project) => {
 					return (
-						<div className="project-jail" key={project.name}>
+						<div
+							className="project-jail"
+							key={
+								language === 'jp'
+									? project.name.japanese
+									: project.name.english
+							}
+						>
 							<div className="project-jail-innerjail">
 								<Link
 									to={project.image}
@@ -61,7 +78,11 @@ export const Home = () => {
 									<img
 										className="thumbnail"
 										src={project.image}
-										alt={project.name}
+										alt={
+											language === 'jp'
+												? project.name.japanese
+												: project.name.english
+										}
 									/>
 								</Link>
 
@@ -72,15 +93,23 @@ export const Home = () => {
 										rel="noopener noreferrer"
 										className="project-jail-title"
 									>
-										{project.name}
+										{language === 'jp'
+											? project.name.japanese
+											: project.name.english}
 									</Link>
 								) : (
 									<span className="project-jail-title">
-										{project.name}
+										{language === 'jp'
+											? project.name.japanese
+											: project.name.english}
 									</span>
 								)}
 
-								<p>{project.description}</p>
+								<p>
+									{language === 'jp'
+										? project.description.japanese
+										: project.description.english}
+								</p>
 
 								{project.github && (
 									<Link
@@ -91,7 +120,11 @@ export const Home = () => {
 										<img
 											className="gitty"
 											src={'./images/github.svg'}
-											alt={project.name}
+											alt={
+												language === 'jp'
+													? project.name.japanese
+													: project.name.english
+											}
 										/>
 									</Link>
 								)}
@@ -106,18 +139,19 @@ export const Home = () => {
 				</div>
 				<div style={{ height: '200px' }}>
 					<p className="intro-description">
-						Whether you’re looking to collaborate on a project, have
-						a question, or just want to chat, feel free to reach
-						out! I'm always open to discussing new opportunities,
-						ideas, or just sharing thoughts on development.
-						<br />
-						<br />
-						You can contact me via email at
-						<span style={{ color: '#c1d5e9' }}>{` ${email} `}</span>
-						or through my discord account
-						<span style={{ color: '#c1d5e9' }}>
-							{` ${discord}`}
-						</span>
+						{translations.contact
+							.split('\n')
+							.map((line, index, arr) => (
+								<span key={index}>
+									{line}
+									{index != arr.length - 1 && <br />}{' '}
+									{/* add <br /> to everything but the last line */}
+								</span>
+							))}
+						<span style={{ color: '#c1d5e9' }}>{` ${email} `}</span>{' '}
+						or through my Discord account{' '}
+						<span style={{ color: '#c1d5e9' }}>{`${discord}`}</span>
+						.
 					</p>
 				</div>
 			</div>
