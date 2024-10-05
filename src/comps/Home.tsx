@@ -12,6 +12,8 @@ export const Home = () => {
 	const [language, setLanguage] = useState('en');
 	const [translations, setTranslations] = useState(english);
 
+	setLanguage('en	');
+
 	useEffect(() => {
 		if (language === 'jp') {
 			setTranslations(japanese);
@@ -144,7 +146,7 @@ export const Home = () => {
 							.map((line, index, arr) => (
 								<span key={index}>
 									{line}
-									{index != arr.length - 1 && <br />}{' '}
+									{index !== arr.length - 1 && <br />}{' '}
 									{/* add <br /> to everything but the last line */}
 								</span>
 							))}
