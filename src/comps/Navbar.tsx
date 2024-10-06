@@ -18,15 +18,6 @@ const Navbar: React.FC<NavbarProps> = ({ language, toggleLanguage }) => {
 						justifyContent: 'center',
 					}}
 				>
-					<div
-						className="languageToggle"
-						onClick={toggleLanguage}
-						style={{
-							fontSize: language === 'en' ? '0.9rem' : undefined,
-						}}
-					>
-						{language === 'jp' ? 'English' : '日本語'}
-					</div>
 					<Link
 						to="/"
 						style={{
@@ -52,6 +43,15 @@ const Navbar: React.FC<NavbarProps> = ({ language, toggleLanguage }) => {
 					>
 						{language === 'en' ? 'Youtube' : 'ユーチューブ'}
 					</Link>
+					<div
+						className="languageToggle"
+						onClick={toggleLanguage}
+						style={{
+							fontSize: language === 'en' ? '0.9rem' : undefined,
+						}}
+					>
+						{language === 'jp' ? 'English' : '日本語'}
+					</div>
 				</div>
 			</div>
 		</nav>
