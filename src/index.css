@@ -88,6 +88,7 @@
 }
 
 .chev-container h2 {
+	/* background-color: #c1d5e9; */
 	color: #fff;
 	font-size: 86px;
 	margin-top: 40px;
@@ -251,6 +252,7 @@
 	}
 
 	.chev-container h2 {
+		width: 300px;
 		margin: 0;
 		font-size: 64px;
 	}

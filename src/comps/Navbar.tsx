@@ -27,20 +27,30 @@ const Navbar: React.FC<NavbarProps> = ({ language, toggleLanguage }) => {
 					>
 						{language === 'jp' ? 'English' : '日本語'}
 					</div>
-					<Link to="/">Home</Link>
 					<Link
+						to="/"
+						style={{
+							fontSize: language === 'jp' ? '0.9rem' : undefined,
+						}}
+					>
+						{language === 'en' ? 'Home' : 'ホーム'}
+					</Link>
+					{/* <Link
 						to="https://github.com/chev0004"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
 						GitHub
-					</Link>
+					</Link> */}
 					<Link
 						to="https://www.youtube.com/@chevvvv/"
 						target="_blank"
 						rel="noopener noreferrer"
+						style={{
+							fontSize: language === 'jp' ? '0.9rem' : undefined,
+						}}
 					>
-						YouTube
+						{language === 'en' ? 'Youtube' : 'ユーチューブ'}
 					</Link>
 				</div>
 			</div>
