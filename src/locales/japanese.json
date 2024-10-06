@@ -5,10 +5,9 @@
 	"about": "自己紹介",
 	"title": "日本語バイリンガルのウェブ開発者",
 	"intro": "18歳の開発者で、ウェブサイトとかウェブアプリを作って3年以上の経験があります。主に便利さや経験を得る為にアプリとかを作ります。フリーランスでサイトとアプリも作ったことあります、\n例えばディスコードでのAIチャットボット。リナックス系の経験もあります。\n\nこの自己紹介を書いた通り、日本語も流暢に話せます。まさに上手です（って言われたけど）\n日本語しか喋れない環境、日本の会社にも働いたことあります。5600以上の漢字や単語を覚えて、日本人の礼儀とか話し方を真似しすぎてネットでよく日本人だと思われます。\n\nプログラミング以外は絵を描くこととベースを弾くことにも興味があります。",
-	"intro1": "I'm an 18-year-old web developer with over three years of experience building dynamic websites and applications. I focus on making web apps that are for the sake of convenience, things that would just make things a little easier. (I use Arch btw).",
-	"intro2": "I also speak Japanese fluently and have worked entirely in Japanese-speaking environments. With over 5600 kanji/vocabulary memorized, clear intonation, and a deep understanding of Japanese culture, I sometimes even fooled native Japanese into thinking I was also one!",
-	"intro3": "Aside from development, I enjoy creating digital art when I’m not buried in code.",
-	"projects": "Projects",
-	"getInTouch": "Get in Touch",
-	"contact": "Whether you’re looking to collaborate on a project, have a question, or just want to chat, feel free to reach out! I'm always open to discussing new opportunities, ideas, or just sharing thoughts on development.\n\nYou can contact me via email at"
+	"projects": "プロジェクト",
+	"getInTouch": "連絡先",
+	"contact": "質問あったり、何かを翻訳してほしい場合とか、ただ雑談したいだけでも、気軽に連絡して下さい！\n\n連絡したい場合は、",
+	"contact2": "にメールを送るか、ディスコードアカウントの",
+	"contact3": "にDMを送って下さい。"
 }

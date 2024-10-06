@@ -12,13 +12,16 @@ const Home: React.FC<HomeProps> = ({ language }) => {
 	const discord = 'xhev';
 	const email = 'chevv0004@gmail.com';
 
+	const [fontSize, setFontSize] = useState('86px');
 	const [translations, setTranslations] = useState(english);
 
 	useEffect(() => {
 		if (language === 'jp') {
 			setTranslations(japanese);
+			setFontSize('54px');
 		} else {
 			setTranslations(english);
+			setFontSize('86px');
 		}
 	}, [language]);
 
@@ -29,7 +32,7 @@ const Home: React.FC<HomeProps> = ({ language }) => {
 					<div>
 						<h2
 							style={{
-								fontSize: language === 'jp' ? '54px' : '86px',
+								fontSize: fontSize,
 							}}
 						>
 							{translations.greetings}
@@ -59,7 +62,7 @@ const Home: React.FC<HomeProps> = ({ language }) => {
 			</div>
 			<div className="projects">
 				<div className="project-title">
-					<h2 className="intro-title">Projects</h2>
+					<h2 className="intro-title">{translations.projects}</h2>
 				</div>
 				{projects.map((project) => {
 					return (
@@ -137,7 +140,7 @@ const Home: React.FC<HomeProps> = ({ language }) => {
 			</div>
 			<div className="about-me">
 				<div>
-					<h2 className="intro-title">Get in Touch</h2>
+					<h2 className="intro-title">{translations.getInTouch}</h2>
 				</div>
 				<div style={{ height: '200px' }}>
 					<p className="intro-description">
@@ -150,10 +153,10 @@ const Home: React.FC<HomeProps> = ({ language }) => {
 									{/* add <br /> to everything but the last line */}
 								</span>
 							))}
-						<span style={{ color: '#c1d5e9' }}>{` ${email} `}</span>{' '}
-						or through my Discord account{' '}
+						<span style={{ color: '#c1d5e9' }}>{` ${email} `}</span>
+						{translations.contact2}
 						<span style={{ color: '#c1d5e9' }}>{`${discord}`}</span>
-						.
+						{translations.contact3}
 					</p>
 				</div>
 			</div>

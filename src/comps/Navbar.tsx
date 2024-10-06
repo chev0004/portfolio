@@ -7,11 +7,27 @@ interface NavbarProps {
 
 const Navbar: React.FC<NavbarProps> = ({ language, toggleLanguage }) => {
 	return (
-		<nav className="navbar">
+		<nav
+			className="navbar"
+			style={{
+				position: 'fixed',
+				zIndex: 1,
+			}}
+		>
+			<div
+				style={{
+					position: 'absolute',
+					backgroundColor: '#000',
+					width: '100%',
+					height: '100%',
+					opacity: '0.4',
+				}}
+			></div>
 			<div className="clickaballs">
 				<div
 					className="links"
 					style={{
+						zIndex: 4,
 						height: '20px',
 						display: 'flex',
 						alignItems: 'center',
