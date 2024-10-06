@@ -3,16 +3,16 @@ import { Link } from 'react-router-dom';
 import projects from '../projects.json';
 import english from '../locales/english.json';
 import japanese from '../locales/japanese.json';
-import React from 'react';
 
-export const Home = () => {
+interface HomeProps {
+	language: string;
+}
+
+const Home: React.FC<HomeProps> = ({ language }) => {
 	const discord = 'xhev';
 	const email = 'chevv0004@gmail.com';
 
-	const [language, setLanguage] = useState('en');
 	const [translations, setTranslations] = useState(english);
-
-	setLanguage('en	');
 
 	useEffect(() => {
 		if (language === 'jp') {
@@ -160,3 +160,5 @@ export const Home = () => {
 		</div>
 	);
 };
+
+export default Home;

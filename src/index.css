@@ -26,17 +26,21 @@
 	position: absolute;
 }
 
-.links {
+.links,
+.languageToggle {
 	gap: 20px;
 	display: flex;
 }
 
-.links a {
+.links a,
+.languageToggle {
 	text-decoration: none;
 	transition: color 0.2s;
 }
 
-.links a:hover {
+.links a:hover,
+.languageToggle:hover {
+	cursor: pointer;
 	color: #fff;
 }
 
