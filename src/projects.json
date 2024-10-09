@@ -1,12 +1,25 @@
 [
 	{
 		"name": {
-			"english": "discord AI chatbots",
+			"english": "Bosyuu",
+			"japanese": "ボシュウ"
+		},
+		"description": {
+			"english": "A bulletin board website where Discord users can connect based on shared interests. Users can create profiles and use tags to categorize their interests.",
+			"japanese": "共通の興味に基づいてユーザーがつながる場所。プロフィールを作成し、興味をタグで整理できる友達募集用のDiscord掲示板"
+		},
+		"link": "https://bosyuu.vercel.app/",
+		"github": "https://github.com/chev0004/bosyuu",
+		"image": "./images/bosyuu.png"
+	},
+	{
+		"name": {
+			"english": "Discord AI chatbots",
 			"japanese": "DiscordのAIチャットボット"
 		},
 		"description": {
-			"english": "using NovelAI's API, I created AI chatbots for Discord. they're not perfect, but I sure learned a lot of new things while making them",
-			"japanese": "NovelAIのAPI使ってDiscordでAIチャットボット作った。そんなよくないけど色々学んだ"
+			"english": "Using NovelAI's API, I created AI chatbots for Discord. they're not perfect, but I sure learned a lot of new things while making them",
+			"japanese": "NovelAIのAPIを使って、Discord用のAIチャットボットを作りました。完璧じゃないけど色々なこと学んだ"
 		},
 		"link": "",
 		"github": "https://github.com/chev0004/Xynthetic",
@@ -14,12 +27,12 @@
 	},
 	{
 		"name": {
-			"english": "zodiac",
-			"japanese": "ジャッキーの計算機"
+			"english": "Zodiac Calculator",
+			"japanese": "十二宮計算機"
 		},
 		"description": {
-			"english": "a simple zodiac calculator, using plain HTML, CSS, and JavaScript. I made it since my friends had it as a school project, even though I wasn't classmates with them and no one probably knows it exists",
-			"japanese": "ジャッキーの計算機。HTML、CSS、JavaScriptで作った"
+			"english": "A simple zodiac calculator, using plain HTML, CSS, and JavaScript. I made it since my friends had it as a school project, even though I wasn't classmates with them and no one probably knows it exists",
+			"japanese": "友達が学校のプロジェクトでやってたんで、普通のHTML、CSS、JavaScriptで十二宮計算機を作りました。クラスメートじゃないけどね、多分誰もこのサイトの存在を知らないんだろうな"
 		},
 		"link": "https://zhodiac.netlify.app/",
 		"github": "https://github.com/chev0004/zodiac-project",
@@ -27,12 +40,12 @@
 	},
 	{
 		"name": {
-			"english": "second website",
-			"japanese": "2つ目のウェブサイト"
+			"english": "Portfolio attempt",
+			"japanese": "ハズレのポートフォリオ"
 		},
 		"description": {
-			"english": "after learning a bit of HTML and CSS properly, I went ahead and tried making a new and improved version of my old one, all with responsive design. I never finished it though, since found out about React and Expressjs",
-			"japanese": "HTML、CSS、JavaScriptで作ったもう一つのウェブサイト。レスポンシブデサガで作った"
+			"english": "After learning a bit of HTML and CSS properly, I went ahead and tried making a new and improved version of my old one, all with responsive design. I never finished it though, since found out about React and Expressjs",
+			"japanese": "初めてポートフォリオ作ろとしてたけど、完成する前にReactとかの存在に気づいてやめた"
 		},
 		"link": "https://xhev.netlify.app/en/",
 		"github": "",
@@ -41,11 +54,11 @@
 	{
 		"name": {
 			"english": "The Chevvy Archives",
-			"japanese": "The Chevvy Archives"
+			"japanese": "ザ・チェビー・アーカイブ"
 		},
 		"description": {
-			"english": "I built this website without any prior knowledge to HTML or CSS, just JavaScript. I brute forced my way with ChatGPT. it's kind of terrible, but it's my first anyway",
-			"japanese": "HTML、CSS、JavaScriptで作ったウェブサイト。ChatGPTで作った"
+			"english": "This was the first website I built, without any prior knowledge to HTML or CSS, just JavaScript. I brute forced my way with ChatGPT. it's kind of terrible, but it's my first anyway",
+			"japanese": "1番最初に作ったウェブサイト。当時はJavaScriptしか知らなかったけどChatGPT使って無理やりで組み立てた"
 		},
 		"link": "https://the-chevvy-archives.netlify.app/",
 		"github": "",
