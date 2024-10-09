@@ -42,13 +42,6 @@ const Navbar: React.FC<NavbarProps> = ({ language, toggleLanguage }) => {
 					>
 						{language === 'en' ? 'Home' : 'ホーム'}
 					</Link>
-					{/* <Link
-						to="https://github.com/chev0004"
-						target="_blank"
-						rel="noopener noreferrer"
-					>
-						GitHub
-					</Link> */}
 					<Link
 						to="https://www.youtube.com/@chevvvv/"
 						target="_blank"
@@ -57,7 +50,14 @@ const Navbar: React.FC<NavbarProps> = ({ language, toggleLanguage }) => {
 							fontSize: language === 'jp' ? '0.9rem' : undefined,
 						}}
 					>
-						{language === 'en' ? 'Youtube' : 'ユーチューブ'}
+						{language === 'en' ? 'YouTube' : 'ユーチューブ'}
+					</Link>
+					<Link
+						to="https://github.com/chev0004"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						GitHub
 					</Link>
 					<div
 						className="languageToggle"

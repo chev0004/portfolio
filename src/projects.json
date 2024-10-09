@@ -44,8 +44,8 @@
 			"japanese": "ハズレのポートフォリオ"
 		},
 		"description": {
-			"english": "After learning a bit of HTML and CSS properly, I went ahead and tried making a new and improved version of my old one, all with responsive design. I never finished it though, since found out about React and Expressjs",
-			"japanese": "初めてポートフォリオ作ろとしてたけど、完成する前にReactとかの存在に気づいてやめた"
+			"english": "After learning a bit of HTML and CSS properly, I went ahead and tried making a new and improved version of my old one, all with responsive design. I never finished it though, since found out about React and Expressjs. It also has a language switch feature",
+			"japanese": "初めてポートフォリオ作ろとしてたけど、完成する前にReactとかの存在に気づいてやめた。言語切り替え機能もある"
 		},
 		"link": "https://xhev.netlify.app/en/",
 		"github": "",
@@ -57,7 +57,7 @@
 			"japanese": "ザ・チェビー・アーカイブ"
 		},
 		"description": {
-			"english": "This was the first website I built, without any prior knowledge to HTML or CSS, just JavaScript. I brute forced my way with ChatGPT. it's kind of terrible, but it's my first anyway",
+			"english": "This was the first website I built, without any prior knowledge to HTML or CSS. Just JavaScript. I brute forced my way with ChatGPT. it's kind of terrible, but it's my first anyway",
 			"japanese": "1番最初に作ったウェブサイト。当時はJavaScriptしか知らなかったけどChatGPT使って無理やりで組み立てた"
 		},
 		"link": "https://the-chevvy-archives.netlify.app/",
